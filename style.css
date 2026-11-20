@@ -59,7 +59,8 @@ h2 .n{font:13px var(--mono);color:var(--muted);text-transform:uppercase;letter-s
 .stats b{display:block;font:600 28px var(--serif)}
 .stats span{font-size:13.5px;color:var(--muted)}
 .stats.compact{grid-template-columns:repeat(3,1fr);margin:24px 0}
-@media (max-width:620px){ .stats{grid-template-columns:repeat(2,1fr)} .stats.compact{grid-template-columns:1fr 1fr 1fr} .stats.compact b{font-size:22px} }
+.stats.trio{grid-template-columns:repeat(3,1fr)}
+@media (max-width:620px){ .stats{grid-template-columns:repeat(2,1fr)} .stats.compact{grid-template-columns:1fr 1fr 1fr} .stats.compact b{font-size:22px} .stats.trio{grid-template-columns:1fr 1fr 1fr} .stats.trio b{font-size:22px} }
 
 .now p{margin:0 0 12px}
 

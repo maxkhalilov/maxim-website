@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frontier models for frontier problems | Maxim Khalilov</title>
+<meta name="description" content="Enterprise AI is moving from frontier-only to architectures that mix frontier, open-weight and small models, driven by cost-aware routing and resilient failover.">
+<meta property="og:title" content="Frontier models for frontier problems">
+<meta property="og:description" content="Enterprise AI is moving from frontier-only to architectures that mix frontier, open-weight and small models, driven by cost-aware routing and resilient failover.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<script>(function(){var p=null;try{p=localStorage.getItem("theme")}catch(e){}var d=p?p==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.dataset.theme=d?"dark":"light"})();</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <a class="logo" href="index.html"><span class="mark">MK</span><span>Maxim Khalilov</span></a>
+    <nav><a href="about.html">About</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="writing.html">Writing</a><a href="blog.html" aria-current="page">Blog</a></nav>
+    <div class="tools">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode"><svg class="moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.3 15.3A9 9 0 0 1 8.7 3.7a9 9 0 1 0 11.6 11.6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41m0-14.14-1.41 1.41M6.34 17.66l-1.41 1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      <button class="menu" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<article class="post">
+<div class="hero small"><div class="eyebrow"><a href="blog.html">Blog</a> · <time datetime="2026-11-21">21 November 2026</time></div><h1>Frontier models <em>for frontier problems.</em></h1></div>
+
+<div class="prose post-body">
+  <p>I see an interesting shift in the industry: moving from relying almost exclusively on frontier models towards architectures that combine proprietary frontier models with capable open-weight alternatives (such as GLM), or SLMs.</p>
+  <p>I believe this shift is driven by two important considerations:</p>
+  <h3>1. Cost efficiency through intelligent model routing</h3>
+  <p>Not every task requires a frontier model. Classification, information extraction, summarization and many other relatively well-defined tasks can often be handled by smaller, cheaper open-weight models. A model routing layer can direct requests to the most appropriate model based on task complexity, performance requirements and cost.</p>
+  <p>The economics are particularly interesting when open models can run on dedicated infrastructure, either on-premises or in the cloud. Of course, the actual business case needs to account for GPU investment, utilization, infrastructure and operational costs.</p>
+  <h3>2. Availability and resilience through intelligent load balancing and failover</h3>
+  <p>A model gateway can also become an important part of the enterprise AI infrastructure strategy. Imagine prioritizing on-premises GPU capacity, bursting to cloud infrastructure during demand peaks, and falling back to alternative model providers when an API becomes unavailable.</p>
+  <p>This creates flexibility in managing capacity, cost and availability. There is, however, an important nuance: model failover is not always transparent. Switching between instances of the same model is relatively straightforward. Switching from a frontier model to an open-weight alternative can change output quality and behavior.</p>
+  <p>Fallback strategies therefore need to be defined and tested at the use-case level, with clear quality thresholds and escalation paths.</p>
+  <p>I see model routing and orchestration becoming increasingly important building blocks of enterprise AI architecture. However, don't get me wrong: I don't think the objective is to replace frontier models with open models. <strong>It's to stop paying frontier-model prices for tasks that don't need frontier-level capabilities, while building systems that remain available when individual models or providers fail.</strong></p>
+  <p>By the way, it will be interesting to see what this shift means for the frontier labs from a revenue perspective.</p>
+</div>
+
+<p class="post-foot"><a href="blog.html">← All posts</a></p>
+</article>
+
+<section>
+  <div class="cta">
+    <h2>Let's talk</h2>
+    <p>Forecasting, AI adoption, ML platforms, speaking or advising? The fastest way to reach me is LinkedIn.</p>
+    <div class="links">
+      <a class="btn primary" href="https://www.linkedin.com/in/maximkhalilov/"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>LinkedIn</a>
+      <a class="btn" href="mailto:you@example.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>you@example.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Maxim Khalilov · Barcelona</span>
+    <span><a href="https://www.linkedin.com/in/maximkhalilov/">LinkedIn</a> · <a href="mailto:you@example.com">Email</a> · <a href="https://www.nlppeople.com/">NLPPeople</a></span>
+  </div>
+</footer>
+<script src="theme.js"></script>
+</body>
+</html>
